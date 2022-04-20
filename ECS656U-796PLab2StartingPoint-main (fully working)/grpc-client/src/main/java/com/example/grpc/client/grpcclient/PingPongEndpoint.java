@@ -152,13 +152,13 @@ public class PingPongEndpoint {
         	return grpcClientService.ping();
     	}
 
-    //@GetMapping("/add")
-	//	public String add(@RequestParam String matrix1, String matrix2) {
-	//	return grpcClientService.add(matrix1,matrix2);
-	//}
+   	 @GetMapping("/add")
+		public String add(@RequestParam String matrix1, String matrix2) {
+		return grpcClientService.add(matrix1,matrix2);
+	}
 
-	//@GetMapping("/multiply")
-		//public String multiply(@RequestParam String matrix1, String matrix2) {
-		//return grpcClientService.multiply(matrix1,matrix2);
-	//}
+	@GetMapping("/multiply")
+		public String multiply(@RequestParam String matrix1, String matrix2) {
+		return grpcClientService.multiply(matrix1,matrix2);
+	}
 }
